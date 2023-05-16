@@ -30,7 +30,8 @@
   width: 500px;
   min-height: 500px;
   position: fixed;
-  right: 15%;
+  /* right: 15%; */
+  left: 60%;
   top: 15%;
 }
 
