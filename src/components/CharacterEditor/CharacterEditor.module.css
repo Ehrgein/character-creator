@@ -41,11 +41,12 @@
 
 /* Used isolate so that I dont have to manage z-indexes
 by creating a stacking context, didn't know of this property
-so thank you for introducing it! :D */
+so thank you for introducing it! :D, although since I rendered by order, it kinda made no sense to have it */
 
 .darkgraybackground {
-  isolation: isolate;
-  position: absolute;
+  /* had position absolute before, changed it to fixed as it broke on some screens */
+  /* position: absolute; */
+  position: fixed;
   top: 60%;
   width: 100%;
   height: 100%;
