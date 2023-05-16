@@ -4,10 +4,13 @@
 }
 
 .maxWidthWrapper {
+  max-width: 1024px;
+  position: relative;
 }
 
 .header {
   padding-bottom: 64px;
+  width: 65%;
 }
 
 .title {
@@ -24,7 +27,26 @@
 }
 
 .characterWrapper {
+  width: 500px;
+  min-height: 500px;
+  position: fixed;
+  right: 15%;
+  top: 15%;
 }
 
 .controlColumn {
+  width: 50%;
+}
+
+/* Used isolate so that I dont have to manage z-indexes
+by creating a stacking context, didn't know of this property
+so thank you for introducing it! :D */
+
+.darkgraybackground {
+  isolation: isolate;
+  position: absolute;
+  top: 60%;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(195deg, 20%, 86%);
 }
